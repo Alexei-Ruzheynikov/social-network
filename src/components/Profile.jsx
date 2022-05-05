@@ -1,6 +1,9 @@
+import s from './Profile.module.css';
+
+
 const Profile = () => {
   return (
-    <div className="content">
+    <div className={s.content}>
       <div>
         <img src="https://docs.microsoft.com/ru-ru/windows/apps/design/controls/images/image-licorice.jpg" />
       </div>
@@ -8,9 +11,9 @@ const Profile = () => {
       <div>
         My posts
         <div>New posts</div>
-        <div>
-          <div>post1</div>
-          <div>post1</div>
+        <div className={s.posts}>
+          <div className={s.item}>post1</div>
+          <div className={s.item}>post2</div>
         </div>
       </div>
     </div>
